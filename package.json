@@ -1,0 +1,25 @@
+{
+  "name": "rust-notebook",
+  "version": "1.0.0",
+  "description": "notebook of study golang",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 4444",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.22.0",
+  "devDependencies": {
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "@types/node": "^24.10.1",
+    "markdown-it-todo-lists": "^0.1.8",
+    "sass": "1.78.0",
+    "vitepress": "2.0.0-alpha.15"
+  },
+  "dependencies": {
+    "vite": "npm:rolldown-vite@^7.2.7",
+    "vue": "^3.5.25"
+  }
+}

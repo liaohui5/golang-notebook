@@ -1,0 +1,57 @@
+name: Deploy VitePress site to Pages
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: download codes
+        uses: actions/checkout@v4
+
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: install node
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+
+      - name: biuld with VitePress
+        run: |
+          pnpm install
+          pnpm docs:build
+          touch docs/.vitepress/dist/.nojekyll
+
+      - name: configure github pages
+        uses: actions/configure-pages@v5.0.0
+
+      - name: upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
