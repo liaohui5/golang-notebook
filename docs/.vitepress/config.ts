@@ -1,17 +1,21 @@
 import markdownItCheckBox from "markdown-it-todo-lists";
 import { defineConfig } from "vitepress";
-import sidebar from "./sidebar";
+import { genSidebarByNavs } from "./sidebar";
 
 const nav = [
   {
     text: "基础语法",
     link: "/base/",
+    isAutoGenSidebar: true,
   },
   {
     text: "无畏并发",
     link: "/concurrency/",
+    isAutoGenSidebar: true,
   },
 ];
+
+const sidebar = genSidebarByNavs(nav);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
