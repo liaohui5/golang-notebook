@@ -9,8 +9,8 @@ const nav = [
     isAutoGenSidebar: true,
   },
   {
-    text: "无畏并发",
-    link: "/concurrency/",
+    text: "标准库",
+    link: "/stdlib/",
     isAutoGenSidebar: true,
   },
 ];
