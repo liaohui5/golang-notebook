@@ -13,6 +13,11 @@ const nav = [
     link: "/stdlib/",
     isAutoGenSidebar: true,
   },
+  {
+    text: "实用工具",
+    link: "/libs/",
+    isAutoGenSidebar: true,
+  },
 ];
 
 const sidebar = genSidebarByNavs(nav);
