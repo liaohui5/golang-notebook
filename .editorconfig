@@ -2,17 +2,46 @@
 root = true
 
 [*]
-indent_style = space
+charset = utf-8
 end_of_line = lf
 insert_final_newline = true
-charset = utf-8
+trim_trailing_whitespace = true
+max_line_length = 120
 
-[*.{ts,js,jsx,tsx,json,json5,yaml,yml,sh,zsh,bash}]
+[*.{js,jsx,ts,tsx,html,htm,css,scss,less,vue,svelte}]
+indent_style = space
 indent_size = 2
 
-[*.py]
+[*.{xml,json,jsonc,json5,yaml,yml,toml}]
+indent_style = space
+indent_size = 2
+
+[*.{lua,nix,sql,sh,bash,zsh,fish}]
+indent_style = space
+indent_size = 2
+
+[justfile]
+indent_style = space
+indent_size = 2
+
+[Dockerfile]
+indent_style = space
+indent_size = 2
+
+[*.{py,java,rs,php,c,cpp,h,hpp}]
+indent_style = space
 indent_size = 4
+
+[*.{go}]
+indent_style = tab
+indent_size = 4
+
+[*.py]
+max_line_length = 88
 
 [Makefile]
 indent_style = tab
+
+[*.{md,markdown,txt}]
+trim_trailing_whitespace = true
 
