@@ -18,6 +18,11 @@ const nav = [
     link: "/libs/",
     isAutoGenSidebar: true,
   },
+  {
+    text: "打包部署",
+    link: "/deploy/",
+    isAutoGenSidebar: true,
+  },
 ];
 
 const sidebar = genSidebarByNavs(nav);
