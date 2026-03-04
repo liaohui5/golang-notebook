@@ -4,7 +4,7 @@
   "description": "notebook of study golang",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs --port 4444",
+    "dev": "vitepress dev docs --port 4444 --host",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
