@@ -11,7 +11,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "vue": "^3.5.32"
+    "vue": "^3.5.33"
   },
   "devDependencies": {
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
