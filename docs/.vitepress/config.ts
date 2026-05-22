@@ -19,6 +19,11 @@ const nav = [
     isAutoGenSidebar: true,
   },
   {
+    text: "CLI & TUI",
+    link: "/clitui/",
+    isAutoGenSidebar: true,
+  },
+  {
     text: "打包部署",
     link: "/deploy/",
     isAutoGenSidebar: true,

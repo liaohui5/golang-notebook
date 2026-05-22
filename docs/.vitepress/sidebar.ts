@@ -21,7 +21,7 @@ export function genSidebarByNavs(navs: Array<any>) {
 
 // 根据传入的路径数组生成侧边栏配置
 export function sidebarGenerator(sidebarPaths: Array<string> = []) {
-  const sidebars = {};
+  const sidebars: Record<string, any> = {};
   for (const path of sidebarPaths) {
     sidebars[path] = autoGenSidebars(path);
   }
