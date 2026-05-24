@@ -19,8 +19,8 @@ const nav = [
     isAutoGenSidebar: true,
   },
   {
-    text: "CLI & TUI",
-    link: "/clitui/",
+    text: "CLI & TUI & GUI",
+    link: "/clituigui/",
     isAutoGenSidebar: true,
   },
   {

@@ -11,14 +11,14 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "vue": "^3.5.33"
+    "vue": "^3.5.35"
   },
   "devDependencies": {
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
-    "@types/node": "^24.12.2",
+    "@types/node": "^24.12.4",
     "markdown-it-todo-lists": "^0.1.8",
     "sass": "1.78.0",
     "vitepress": "2.0.0-alpha.17"
   },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@11.1.3"
 }
