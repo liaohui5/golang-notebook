@@ -4,28 +4,23 @@ import { genSidebarByNavs } from "./sidebar";
 
 const nav = [
   {
-    text: "基础语法",
+    text: "基础入门",
     link: "/base/",
     isAutoGenSidebar: true,
   },
   {
-    text: "标准库",
+    text: "内置标准库",
     link: "/stdlib/",
     isAutoGenSidebar: true,
   },
   {
-    text: "实用工具",
+    text: "实用开源库",
     link: "/libs/",
     isAutoGenSidebar: true,
   },
   {
     text: "CLI & TUI & GUI",
     link: "/clituigui/",
-    isAutoGenSidebar: true,
-  },
-  {
-    text: "打包部署",
-    link: "/deploy/",
     isAutoGenSidebar: true,
   },
 ];
