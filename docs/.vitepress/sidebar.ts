@@ -1,3 +1,4 @@
+// @ts-ignore
 import fs from "node:fs";
 
 // 根据 nav 生成侧边栏
