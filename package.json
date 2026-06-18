@@ -15,6 +15,5 @@
     "markdown-it-todo-lists": "^0.1.8",
     "sass": "1.78.0",
     "vitepress": "2.0.0-alpha.17"
-  },
-  "packageManager": "pnpm@11.1.3"
+  }
 }
