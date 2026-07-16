@@ -12,7 +12,9 @@
 
 ## 联系方式
 
-邮箱: secretx500@qq.com
+- 邮箱: secretx500@qq.com
+- github: [https://github.com/liaohui5](https://github.com/liaohui5)
 
-github: [https://github.com/liaohui5](https://github.com/liaohui5)
-![logo](https://raw.githubusercontent.com/liaohui5/images/main/images/202209201513473.jpg)
+<picture>
+  <img src="https://raw.githubusercontent.com/liaohui5/liaohui5/refs/heads/main/assets/coding-by-penguins.gif" />
+</picture>
